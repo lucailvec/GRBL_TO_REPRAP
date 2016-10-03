@@ -41,13 +41,6 @@ public class test {
 		}
 	}
 	
-	@Test
-	public void testRegex(){
-		String rgx ="G17 ";
-		System.out.println("G17 acnisacn".replace(rgx, "iaiasoai"));
-		System.out.println("G18".replace(rgx, "iaiasoai"));
-		
-	}
 	
 	@Test
 	public void baseFunction1 (){
