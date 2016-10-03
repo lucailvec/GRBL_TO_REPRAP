@@ -16,6 +16,7 @@ Anyway if you want to use this transaltor for translate a random file of gcode *
 - [] Possibility to remove G2 - G3 with G1 command.
 - [] Testing a little more.
 
+
 ## Prerequisities
 
 I tested with: 
@@ -49,6 +50,7 @@ java -cp build/libs/GCODESanitizer.jar main.GCODESanitizer path/fileName.gcode
 
 and if the file exist you will see the transale procedure in sysout:
 
+
 ```
 Change str: G0 Z5 Into : G1 Z5
 Change str: X18.221 Y11.778 Into : G1 X18.221 Y11.778
@@ -80,7 +82,6 @@ BUILD FAILED
 Total time: 4.971 secs
 ```
 
-
 ## Authors
 
 * **Luca Vecchi** - *Initial work* - [lucailvec](https://github.com/lucailvec)
@@ -89,4 +90,8 @@ See also the list of [contributors](https://github.com/lucailvec/GRBL_TO_REPRAP/
 
 ## License
 
+<<<<<<< HEAD
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+=======
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+>>>>>>> d0a8c46118e3ddb6d741642bc5c5e033f7e5e020
