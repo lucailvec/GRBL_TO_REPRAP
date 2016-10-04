@@ -35,6 +35,9 @@ public class SanitizerRule {
 		
 	}
 	public String sanitize(String sCurrentLine){
+		if(sCurrentLine.contains("Z-"))
+			sCurrentLine=sCurrentLine + " S1";
+		
 		if(sCurrentLine.length()==0){
 			return null;
 		}
@@ -45,7 +48,8 @@ public class SanitizerRule {
 			case 'G': state='G';
 					sCurrentLine= sCurrentLine.replace("G17","").replace("G18","").replace("G19","");
 					sCurrentLine = sCurrentLine.trim();
-
+					
+					
 
 					sCurrentLine= sCurrentLine.replace("G0 ","G1 ");
 					state='G';

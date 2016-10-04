@@ -11,10 +11,11 @@ Anyway if you want to use this transaltor for translate a random file of gcode *
 - [x] Remove M command.
 - [x] Replace fast line with G1.
 - [x] Restore row without the GXX field but obviusly work with it (grbl protocol).
+- [x] Add in any negative Z the command ignore endstop S1.
 - [x] Testing a little bit.
-- [] **Remove home command (G28)**
-- [] Possibility to remove G2 - G3 with G1 command.
-- [] Testing a little more.
+- [ ] **Remove home command (G28)**
+- [ ] Possibility to remove G2 - G3 with G1 command.
+- [ ] Testing a little more.
 
 
 ## Prerequisities

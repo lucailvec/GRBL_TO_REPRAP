@@ -1,10 +1,10 @@
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
+
+
+import static org.junit.Assert.*;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -96,6 +96,17 @@ public class test {
 		String expected = "G1 X1 Y2\n" +
 				"G1 Z3\n" +
 				"G1 Z4\n"; 
+		
+		usefullMethod(expected, testString);	
+	}
+	@Test
+	public void negativeHigh(){
+		String testString = "G1 Z2\n"
+				+ "G1 Z-2\n"
+				+"Z-0.3\n"; 
+		String expected = "G1 Z2\n" +
+				"G1 Z-2 S1\n" +
+				"G1 Z-0.3 S1\n"; 
 		
 		usefullMethod(expected, testString);
 		

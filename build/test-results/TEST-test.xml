@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-10-03T22:08:16" hostname="DESKTOP-UH7LIV6" time="0.008">
+<testsuite name="test" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-10-04T17:25:43" hostname="DESKTOP-UH7LIV6" time="0.011">
   <properties/>
   <testcase name="baseFunction1" classname="test" time="0.005"/>
   <testcase name="iNotWantG0" classname="test" time="0.001"/>
+  <testcase name="negativeHigh" classname="test" time="0.001"/>
   <testcase name="particularG17G18G19" classname="test" time="0.001"/>
-  <testcase name="removeSingleMultiG17G18G19" classname="test" time="0.001"/>
+  <testcase name="removeSingleMultiG17G18G19" classname="test" time="0.002"/>
   <system-out><![CDATA[Change str: G1 X13.577 Y13.069 Into : G1 X13.577 Y13.069
 
 Change str: Z15 Into : G1 Z15
@@ -16,6 +17,12 @@ Change str: G0 X13.577 Y13.069 Into : G1 X13.577 Y13.069
 Change str: Z15 Into : G1 Z15
 
 Change str: Z5 Into : G1 Z5
+
+Change str: G1 Z2 Into : G1 Z2
+
+Change str: G1 Z-2 Into : G1 Z-2 S1
+
+Change str: Z-0.3 Into : G1 Z-0.3 S1
 
 Change str: G17 G1 X1 Y2 Into : G1 X1 Y2
 
